@@ -6,3 +6,7 @@
 .navbar__logo > img {
   border-radius: 50%;
 }
+
+.language-json button {
+  display: none !important;
+}

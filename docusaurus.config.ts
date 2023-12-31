@@ -3,9 +3,10 @@ import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  title: "Countify",
+  titleDelimiter: "–",
+  tagline: "Documentation for your dream Discord counting bot.",
+  favicon: "https://countify.fun/favicon.ico",
 
   // Set the production url of your site here
   url: "https://docs.countify.fun",
@@ -101,10 +102,12 @@ const config: Config = {
       respectPrefersColorScheme: false,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.vsDark,
+      additionalLanguages: ["json"],
     },
   } satisfies Preset.ThemeConfig,
+
+  clientModules: [require.resolve("./src/discord-components")],
 };
 
 export default config;
