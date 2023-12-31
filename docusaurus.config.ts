@@ -51,6 +51,7 @@ const config: Config = {
       logo: {
         alt: "Countify Logo",
         src: "https://countify.fun/logo.png",
+        href: "https://countify.fun",
       },
       items: [
         {
