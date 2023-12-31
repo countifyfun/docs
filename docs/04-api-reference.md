@@ -84,20 +84,24 @@ Returns the top 10 users.
 #### Query
 
 `sort`: A sort type. Can be `counts`, `fails`, or `cf_ratio`. (Default: `cf_ratio`)
+`page`: The page to view. (Default: `1`)
 
 ### Response
 
 ```json
-[
-  {
-    "id": "string",
-    "name": "string",
-    "username": "string",
-    "avatar": "string",
-    "counts": "number",
-    "fails": "number"
-  }
-]
+{
+  "users": [
+    {
+      "id": "string",
+      "name": "string",
+      "username": "string",
+      "avatar": "string",
+      "counts": "number",
+      "fails": "number"
+    }
+  ],
+  "totalPages": "number"
+}
 ```
 
 ## `/servers/:sid/users/:uid`
