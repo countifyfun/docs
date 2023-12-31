@@ -38,7 +38,15 @@ Returns information about the specified server ID.
   "id": "string",
   "name": "string",
   "avatar": "string | undefined",
-  "count": "number"
+  "count": "number",
+  "previousUser": {
+    "id": "string",
+    "name": "string",
+    "username": "string",
+    "avatar": "string",
+    "counts": "number",
+    "fails": "number"
+  }
 }
 ```
 
@@ -61,6 +69,35 @@ Returns global information about the specified user ID.
   "counts": "number",
   "fails": "number"
 }
+```
+
+## `/servers/:id/users`
+
+Returns the top 10 users.
+
+### Parameters
+
+#### URL
+
+`id`: A server ID.
+
+#### Query
+
+`sort`: A sort type. Can be `counts`, `fails`, or `cf_ratio`. (Default: `cf_ratio`)
+
+### Response
+
+```json
+[
+  {
+    "id": "string",
+    "name": "string",
+    "username": "string",
+    "avatar": "string",
+    "counts": "number",
+    "fails": "number"
+  }
+]
 ```
 
 ## `/servers/:sid/users/:uid`
