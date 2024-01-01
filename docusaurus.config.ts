@@ -68,11 +68,6 @@ const config: Config = {
         },
       ],
     },
-    docs: {
-      sidebar: {
-        hideable: true,
-      },
-    },
     footer: {
       style: "dark",
       links: [
