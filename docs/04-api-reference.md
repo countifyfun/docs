@@ -84,6 +84,7 @@ Returns the top 10 users.
 #### Query
 
 `sort`: A sort type. Can be `counts`, `fails`, or `cf_ratio`. (Default: `cf_ratio`)
+
 `page`: The page to view. (Default: `1`)
 
 ### Response
