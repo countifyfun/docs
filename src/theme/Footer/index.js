@@ -16,7 +16,8 @@ function Footer() {
           <h1 className={styles.footer_name}>Countify</h1>
         </a>
         <p className={styles.footer_copyright}>
-          © 2023 <a href="https://github.com/countifyfun">Countify Labs</a> (a
+          © {new Date().getFullYear()}{" "}
+          <a href="https://github.com/countifyfun">Countify Labs</a> (a
           subdivision of{" "}
           <a href="https://youtube.com/@graphifystatistics">Graphify Studios</a>
           ). All rights reserved.
