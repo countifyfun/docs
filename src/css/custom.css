@@ -6,6 +6,10 @@
   --ifm-font-family-base: "Inter";
 }
 
+::selection {
+  background-color: rgba(253, 224, 71, 0.8);
+}
+
 .navbar__logo > img {
   border-radius: 50%;
 }
