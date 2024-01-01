@@ -1,6 +1,7 @@
 import type * as Preset from "@docusaurus/preset-classic";
 import type { Config } from "@docusaurus/types";
 import { themes as prismThemes } from "prism-react-renderer";
+import { socials } from "./socials";
 
 const config: Config = {
   title: "Countify",
@@ -61,11 +62,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        {
-          href: "https://github.com/countifyfun/countify",
-          label: "GitHub",
-          position: "right",
-        },
+        ...socials,
       ],
     },
     footer: {

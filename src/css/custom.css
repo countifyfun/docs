@@ -14,6 +14,29 @@
   --ifm-footer-background-color: var(--ifm-navbar-background-color);
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.social path {
+  fill: var(--ifm-navbar-link-color);
+  transition: fill var(--ifm-transition-fast)
+    var(--ifm-transition-timing-default);
+}
+
+.social:hover path {
+  fill: var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 996px) {
+  .social {
+    display: none;
+  }
+}
+
 .language-json button {
   display: none !important;
 }
