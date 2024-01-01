@@ -46,8 +46,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "https://countify.fun/og.jpg",
+    metadata: [{ name: "theme-color", content: "#fde047" }],
     navbar: {
       title: "Countify",
       logo: {
