@@ -73,4 +73,4 @@ That means that Countify has been enabled in your server. Congratulations!
 
 ## Problems?
 
-If you encountered any problems while inviting or setting up Countify, make sure to [make an issue on GitHub](https://github.com/countifyfun/bot)<!-- or reporting the bug on [our Discord server](https://countify.fun/discord) -->.
+If you encountered any problems while inviting or setting up Countify, make sure to [make an issue on GitHub](https://github.com/countifyfun/bot) or asking for help in [our Discord server](https://countify.fun/discord).
