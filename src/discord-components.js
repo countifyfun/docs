@@ -4,7 +4,7 @@ require("global/window").$discordMessage = {
       author: "Countify",
       avatar: "https://countify.fun/logo.png",
       bot: true,
-      verified: true,
+      verified: false,
       roleColor: "#fde047",
     },
     toasted: {
