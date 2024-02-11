@@ -1,17 +1,25 @@
 import {
 DiscordMessages as Discord,
 DiscordMessage as Message,
+DiscordSystemMessage as SystemMessage,
 DiscordEmbed as Embed,
 DiscordEmbedDescription as EmbedDescription,
 DiscordCommand as Command,
-DiscordMention as Mention
 } from "@skyra/discord-components-react";
 
 # Pin Milestones
 
 Pin a message every time a new milestone is reached. (10, 20, 30, 40, 50, etc.)
 
-![Pin Milestones in action](/pin-milestones.png)
+<Discord>
+  <Message>1995</Message>
+  <Message profile="toasted">1996</Message>
+  <Message>1997</Message>
+  <Message profile="toasted">1998</Message>
+  <Message>1999</Message>
+  <Message profile="toasted">2000</Message>
+  <SystemMessage type="pin"><i>Countify</i> pinned <i>a message</i> to this channel. See all <i>pinned messages</i>.</SystemMessage>
+</Discord>
 
 ## Enable
 
