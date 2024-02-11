@@ -8,7 +8,7 @@ The base URL for our API is `https://api.countify.fun`. To be able to use these 
 
 ## `/servers`
 
-Returns a list of servers sorted by highest count.
+Retrive a list of servers sorted by highest count.
 
 ### Response
 
@@ -23,9 +23,9 @@ Returns a list of servers sorted by highest count.
 ]
 ```
 
-## `/servers/:id`
+## `/servers/{id}`
 
-Returns information about the specified server ID.
+Retrive information about the specified server ID.
 
 ### Parameters
 
@@ -50,9 +50,9 @@ Returns information about the specified server ID.
 }
 ```
 
-## `/users/:id`
+## `/users/{id}`
 
-Returns global information about the specified user ID.
+Retrive information about the specified user ID.
 
 ### Parameters
 
@@ -71,9 +71,9 @@ Returns global information about the specified user ID.
 }
 ```
 
-## `/servers/:id/users`
+## `/servers/{id}/users`
 
-Returns the top 10 users.
+Retrive a paginated list of all the users from the specified server ID.
 
 ### Parameters
 
@@ -105,15 +105,15 @@ Returns the top 10 users.
 }
 ```
 
-## `/servers/:sid/users/:uid`
+## `/servers/{serverId}/users/{userId}`
 
-Returns server information about the specified user ID in the specified server ID.
+Retrive information about the specified user ID from the specified server ID.
 
 ### Parameters
 
-`sid`: A server ID.
+`serverId`: A server ID.
 
-`uid`: A user ID.
+`userId`: A user ID.
 
 ### Response
 
@@ -134,4 +134,23 @@ Returns server information about the specified user ID in the specified server I
   "counts": "number",
   "fails": "number"
 }
+```
+
+## `/servers/{id}/history`
+
+Retrive the count history the specified server ID.
+
+### Parameters
+
+`id`: A server ID.
+
+### Response
+
+```json
+[
+  {
+    "time": "number",
+    "count": "number"
+  }
+]
 ```
