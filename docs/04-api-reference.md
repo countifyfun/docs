@@ -4,7 +4,11 @@ sidebar_position: 4
 
 # API Reference
 
-The base URL for our API is `https://api.countify.fun`. To be able to use these API endpoints, make sure to prefix them with the base URL.
+The API for your dream Discord counting bot.
+
+```sh title="Base URL"
+https://api.countify.fun
+```
 
 ## `/servers`
 
